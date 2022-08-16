@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bank</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-10">
+            Welcome To <span class="font-semibold text-rose-700">BD Bank</span>
+        </h1>
+    </header>
+    <main class="bg-slate-900 py-12 mt-12 container mx-auto rounded-xl">
+        <section class="">
+            <div class="grid grid-cols-3 gap-8 w-9/12 mx-auto text-black">
+                <div class="bg-slate-100 p-8 rounded-xl">
+                    <h4 class="text-2xl font-semibold mb-2">Diposite</h4>
+                    <h2 class="text-4xl">$<span id="deposit-total">00</span></h2>
+                </div>
+                <div class="bg-slate-100 p-8 rounded-xl">
+                    <h4 class="text-2xl font-semibold mb-2">Withdraw</h4>
+                    <h2 class="text-4xl">$<span id="withdraw-total">00</span></h2>
+                </div>
+                <div class="bg-slate-100 p-8 rounded-xl">
+                    <h4 class="text-2xl font-semibold mb-2">Blance</h4>
+                    <h2 class="text-4xl">$<span id="balance-total">1000</span></h2>
+                </div>
+            </div>
+        </section>
+        <!-- Deposite and withdraw -->
+        <section class="mt-12 mx-8">
+            <div class="grid grid-cols-2 gap-8 w-9/12 mx-auto">
+                <div class="bg-sky-400 p-8 rounded-xl">
+                    <h4 class="text-2xl font-semibold mb-4">Please Diposite</h4>
+
+                    <input type="text" name="" id="diposite-field" placeholder="$ Amount you want to diposite"
+                        class="w-3/5 block px-3 py-1 rounded-md" />
+                    <button id="btn-diposite" type="submit"
+                        class="mt-4 bg-slate-900 hover:bg-slate-700 px-4 py-1 rounded-lg text-neutral-50 font-semibold">
+                        Diposite
+                    </button>
+                </div>
+                <div class="bg-indigo-400 p-8 rounded-xl">
+                    <h4 class="text-2xl font-semibold mb-4">Please Withdraw</h4>
+                    <input type="text" name="" id="withdraw-field" placeholder="$ Amount you want to withdraw"
+                    class="w-3/5 block px-3 py-1 rounded-md" />
+                <button id="btn-withdraw" type="submit"
+                    class="mt-4 bg-slate-900 hover:bg-slate-700 px-4 py-1 rounded-lg text-neutral-50 font-semibold">
+                    Withdraw
+                </button>
+                </div>
+            </div>
+        </section>
+    </main>    
+    <script src="js/diposite.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+
+</html>
